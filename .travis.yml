@@ -1,4 +1,12 @@
 language: objective-c
 osx_image: xcode8.2
+cache:
+    - bundler
+install:
+    - bundle install --path vendor/bundle
 script:
-    'xcodebuild -scheme IosTravisFastlaneDemoDev -destination "platform=iOS Simulator,name=iPhone 7,OS=10.1" clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO'
+    - if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bundle exec fastlane test; fi
+    - if [ "$TRAVIS_BRANCH" = "develop" ]; then bundle exec fastlane dev; fi
+    - if [[ "$TRAVIS_BRANCH" = "release"* ]]; then bundle exec fastlane stage; fi
+    - if [ "$TRAVIS_BRANCH" = "master" ]; then bundle exec fastlane prod; fi
+
