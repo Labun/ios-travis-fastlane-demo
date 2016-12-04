@@ -314,7 +314,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C8DE71881DECC6EF00373BCD /* Debug */ = {
+		C892F7421DF4987600CEDA6A /* Stage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -361,9 +361,97 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Stage;
 		};
-		C8DE71891DECC6EF00373BCD /* Release */ = {
+		C892F7431DF4987600CEDA6A /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IosTravisFastlaneDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.labun.IosTravisFastlaneDemo.stage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Stage;
+		};
+		C892F7441DF4987600CEDA6A /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = IosTravisFastlaneDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.labun.IosTravisFastlaneDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosTravisFastlaneDemo.app/IosTravisFastlaneDemo";
+			};
+			name = Stage;
+		};
+		C892F7451DF4987600CEDA6A /* Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = IosTravisFastlaneDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.labun.IosTravisFastlaneDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = IosTravisFastlaneDemo;
+			};
+			name = Stage;
+		};
+		C8DE71881DECC6EF00373BCD /* Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Dev;
+		};
+		C8DE71891DECC6EF00373BCD /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -403,9 +491,21 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Production;
 		};
-		C8DE718B1DECC6EF00373BCD /* Debug */ = {
+		C8DE718B1DECC6EF00373BCD /* Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IosTravisFastlaneDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.labun.IosTravisFastlaneDemo.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Dev;
+		};
+		C8DE718C1DECC6EF00373BCD /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -415,21 +515,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
-			name = Debug;
+			name = Production;
 		};
-		C8DE718C1DECC6EF00373BCD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = IosTravisFastlaneDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pl.labun.IosTravisFastlaneDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		C8DE718E1DECC6EF00373BCD /* Debug */ = {
+		C8DE718E1DECC6EF00373BCD /* Dev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -441,9 +529,9 @@
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosTravisFastlaneDemo.app/IosTravisFastlaneDemo";
 			};
-			name = Debug;
+			name = Dev;
 		};
-		C8DE718F1DECC6EF00373BCD /* Release */ = {
+		C8DE718F1DECC6EF00373BCD /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -455,9 +543,9 @@
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosTravisFastlaneDemo.app/IosTravisFastlaneDemo";
 			};
-			name = Release;
+			name = Production;
 		};
-		C8DE71911DECC6EF00373BCD /* Debug */ = {
+		C8DE71911DECC6EF00373BCD /* Dev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -468,9 +556,9 @@
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = IosTravisFastlaneDemo;
 			};
-			name = Debug;
+			name = Dev;
 		};
-		C8DE71921DECC6EF00373BCD /* Release */ = {
+		C8DE71921DECC6EF00373BCD /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -481,7 +569,7 @@
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = IosTravisFastlaneDemo;
 			};
-			name = Release;
+			name = Production;
 		};
 /* End XCBuildConfiguration section */
 
@@ -489,35 +577,42 @@
 		C8DE715D1DECC6EE00373BCD /* Build configuration list for PBXProject "IosTravisFastlaneDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C8DE71881DECC6EF00373BCD /* Debug */,
-				C8DE71891DECC6EF00373BCD /* Release */,
+				C8DE71881DECC6EF00373BCD /* Dev */,
+				C892F7421DF4987600CEDA6A /* Stage */,
+				C8DE71891DECC6EF00373BCD /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 		C8DE718A1DECC6EF00373BCD /* Build configuration list for PBXNativeTarget "IosTravisFastlaneDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C8DE718B1DECC6EF00373BCD /* Debug */,
-				C8DE718C1DECC6EF00373BCD /* Release */,
+				C8DE718B1DECC6EF00373BCD /* Dev */,
+				C892F7431DF4987600CEDA6A /* Stage */,
+				C8DE718C1DECC6EF00373BCD /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
 		};
 		C8DE718D1DECC6EF00373BCD /* Build configuration list for PBXNativeTarget "IosTravisFastlaneDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C8DE718E1DECC6EF00373BCD /* Debug */,
-				C8DE718F1DECC6EF00373BCD /* Release */,
+				C8DE718E1DECC6EF00373BCD /* Dev */,
+				C892F7441DF4987600CEDA6A /* Stage */,
+				C8DE718F1DECC6EF00373BCD /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
 		};
 		C8DE71901DECC6EF00373BCD /* Build configuration list for PBXNativeTarget "IosTravisFastlaneDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C8DE71911DECC6EF00373BCD /* Debug */,
-				C8DE71921DECC6EF00373BCD /* Release */,
+				C8DE71911DECC6EF00373BCD /* Dev */,
+				C892F7451DF4987600CEDA6A /* Stage */,
+				C8DE71921DECC6EF00373BCD /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
 		};
 /* End XCConfigurationList section */
 	};
