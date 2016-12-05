@@ -15,6 +15,7 @@ desc "Build and submit the app on Testflight"
 lane :stage do |options|
     match(type: "appstore")
     gym(scheme: "IosTravisFastlaneDemoStage")
+    pilot
 end
 
 desc "Build and submit the app on AppStore"
@@ -22,5 +23,6 @@ lane :prod do |options|
     match(type: "appstore")
     gym(scheme: "IosTravisFastlaneDemoProd")
     snapshot
+    deliver
 end
 
