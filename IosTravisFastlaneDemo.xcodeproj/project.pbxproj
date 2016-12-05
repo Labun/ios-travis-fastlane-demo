@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C853230B1DF592F0005676F1 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C853230A1DF592F0005676F1 /* SnapshotHelper.swift */; };
 		C8DE71661DECC6EF00373BCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DE71651DECC6EF00373BCD /* AppDelegate.swift */; };
 		C8DE71681DECC6EF00373BCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DE71671DECC6EF00373BCD /* ViewController.swift */; };
 		C8DE716B1DECC6EF00373BCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8DE71691DECC6EF00373BCD /* Main.storyboard */; };
@@ -34,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C853230A1DF592F0005676F1 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		C853230F1DF59979005676F1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C85323101DF59A03005676F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C85323111DF59A0B005676F1 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = de; path = de.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8DE71621DECC6EF00373BCD /* IosTravisFastlaneDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosTravisFastlaneDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DE71651DECC6EF00373BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8DE71671DECC6EF00373BCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +124,7 @@
 		C8DE71841DECC6EF00373BCD /* IosTravisFastlaneDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
+				C853230A1DF592F0005676F1 /* SnapshotHelper.swift */,
 				C8DE71851DECC6EF00373BCD /* IosTravisFastlaneDemoUITests.swift */,
 				C8DE71871DECC6EF00373BCD /* Info.plist */,
 			);
@@ -277,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8DE71861DECC6EF00373BCD /* IosTravisFastlaneDemoUITests.swift in Sources */,
+				C853230B1DF592F0005676F1 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +307,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				C8DE716A1DECC6EF00373BCD /* Base */,
+				C85323101DF59A03005676F1 /* en */,
+				C85323111DF59A0B005676F1 /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -308,6 +317,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C8DE716F1DECC6EF00373BCD /* Base */,
+				C853230F1DF59979005676F1 /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -319,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -411,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -460,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

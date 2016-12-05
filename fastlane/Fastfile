@@ -21,5 +21,6 @@ desc "Build and submit the app on AppStore"
 lane :prod do |options|
     match(type: "appstore")
     gym(scheme: "IosTravisFastlaneDemoProd")
+    snapshot
 end
 

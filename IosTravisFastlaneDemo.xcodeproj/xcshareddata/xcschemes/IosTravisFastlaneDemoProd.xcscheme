@@ -20,6 +20,34 @@
                ReferencedContainer = "container:IosTravisFastlaneDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C8DE71751DECC6EF00373BCD"
+               BuildableName = "IosTravisFastlaneDemoTests.xctest"
+               BlueprintName = "IosTravisFastlaneDemoTests"
+               ReferencedContainer = "container:IosTravisFastlaneDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C8DE71801DECC6EF00373BCD"
+               BuildableName = "IosTravisFastlaneDemoUITests.xctest"
+               BlueprintName = "IosTravisFastlaneDemoUITests"
+               ReferencedContainer = "container:IosTravisFastlaneDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,6 +56,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C8DE71751DECC6EF00373BCD"
+               BuildableName = "IosTravisFastlaneDemoTests.xctest"
+               BlueprintName = "IosTravisFastlaneDemoTests"
+               ReferencedContainer = "container:IosTravisFastlaneDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C8DE71801DECC6EF00373BCD"
+               BuildableName = "IosTravisFastlaneDemoUITests.xctest"
+               BlueprintName = "IosTravisFastlaneDemoUITests"
+               ReferencedContainer = "container:IosTravisFastlaneDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
