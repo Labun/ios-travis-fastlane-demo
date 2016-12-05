@@ -1,7 +1,9 @@
 language: objective-c
-osx_image: xcode8.2
+osx_image: xcode8
 cache:
     - bundler
+before_install:
+- echo -e "machine gitlab.com\n login $CI_USER_LOGIN \n password $CI_USER_PASS" >> ~/.netrc
 install:
     - bundle install --path vendor/bundle
 script:

@@ -193,7 +193,7 @@
 					C8DE71611DECC6EE00373BCD = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = J677PBPSB2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					C8DE71751DECC6EF00373BCD = {
 						CreatedOnToolsVersion = 8.1;
@@ -368,11 +368,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = J677PBPSB2;
 				INFOPLIST_FILE = IosTravisFastlaneDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.labun.IosTravisFastlaneDemo.stage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "111aa576-f749-41a0-bab7-4a4272f391cc";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore pl.labun.IosTravisFastlaneDemo.stage";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Stage;
@@ -499,11 +502,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = J677PBPSB2;
 				INFOPLIST_FILE = IosTravisFastlaneDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.labun.IosTravisFastlaneDemo.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c356dc3f-ea03-479c-9a50-20d558634390";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc pl.labun.IosTravisFastlaneDemo.dev";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Dev;
@@ -512,11 +518,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = J677PBPSB2;
 				INFOPLIST_FILE = IosTravisFastlaneDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.labun.IosTravisFastlaneDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6bfc96cf-bb67-4254-a2bd-fc8ad1047e0c";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore pl.labun.IosTravisFastlaneDemo";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Production;

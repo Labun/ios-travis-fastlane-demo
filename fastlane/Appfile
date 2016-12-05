@@ -1,0 +1,14 @@
+for_lane :dev do
+  app_identifier "pl.labun.IosTravisFastlaneDemo.dev"
+  team_id "J677PBPSB2"
+end
+
+for_lane :stage do
+  app_identifier "pl.labun.IosTravisFastlaneDemo.stage"
+  team_id "J677PBPSB2"
+end
+
+for_lane :prod do
+  app_identifier "pl.labun.IosTravisFastlaneDemo"
+  team_id "J677PBPSB2"
+end
