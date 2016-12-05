@@ -15,6 +15,7 @@
 		C8DE71701DECC6EF00373BCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8DE716E1DECC6EF00373BCD /* LaunchScreen.storyboard */; };
 		C8DE717B1DECC6EF00373BCD /* IosTravisFastlaneDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DE717A1DECC6EF00373BCD /* IosTravisFastlaneDemoTests.swift */; };
 		C8DE71861DECC6EF00373BCD /* IosTravisFastlaneDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DE71851DECC6EF00373BCD /* IosTravisFastlaneDemoUITests.swift */; };
+		C8FEF87EAB8B1CA8DF0C2DC2 /* Pods_IosTravisFastlaneDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9962F01D1C940763930CC1AA /* Pods_IosTravisFastlaneDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		87860B7AACA4667375EA7B11 /* Pods-IosTravisFastlaneDemo.stage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosTravisFastlaneDemo.stage.xcconfig"; path = "Pods/Target Support Files/Pods-IosTravisFastlaneDemo/Pods-IosTravisFastlaneDemo.stage.xcconfig"; sourceTree = "<group>"; };
+		8DC536C83077D4A71391E656 /* Pods-IosTravisFastlaneDemo.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosTravisFastlaneDemo.dev.xcconfig"; path = "Pods/Target Support Files/Pods-IosTravisFastlaneDemo/Pods-IosTravisFastlaneDemo.dev.xcconfig"; sourceTree = "<group>"; };
+		9962F01D1C940763930CC1AA /* Pods_IosTravisFastlaneDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosTravisFastlaneDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C853230A1DF592F0005676F1 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		C853230F1DF59979005676F1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		C85323101DF59A03005676F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +56,7 @@
 		C8DE71811DECC6EF00373BCD /* IosTravisFastlaneDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosTravisFastlaneDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DE71851DECC6EF00373BCD /* IosTravisFastlaneDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosTravisFastlaneDemoUITests.swift; sourceTree = "<group>"; };
 		C8DE71871DECC6EF00373BCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF0F91A30ECBA8B3AD991EF5 /* Pods-IosTravisFastlaneDemo.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosTravisFastlaneDemo.production.xcconfig"; path = "Pods/Target Support Files/Pods-IosTravisFastlaneDemo/Pods-IosTravisFastlaneDemo.production.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8FEF87EAB8B1CA8DF0C2DC2 /* Pods_IosTravisFastlaneDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3574E3A7B0069CC106430F38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9962F01D1C940763930CC1AA /* Pods_IosTravisFastlaneDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C8DE71591DECC6EE00373BCD = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +100,8 @@
 				C8DE71791DECC6EF00373BCD /* IosTravisFastlaneDemoTests */,
 				C8DE71841DECC6EF00373BCD /* IosTravisFastlaneDemoUITests */,
 				C8DE71631DECC6EF00373BCD /* Products */,
+				F33CA19344879BF48CF9006B /* Pods */,
+				3574E3A7B0069CC106430F38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +147,16 @@
 			path = IosTravisFastlaneDemoUITests;
 			sourceTree = "<group>";
 		};
+		F33CA19344879BF48CF9006B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DC536C83077D4A71391E656 /* Pods-IosTravisFastlaneDemo.dev.xcconfig */,
+				87860B7AACA4667375EA7B11 /* Pods-IosTravisFastlaneDemo.stage.xcconfig */,
+				EF0F91A30ECBA8B3AD991EF5 /* Pods-IosTravisFastlaneDemo.production.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +164,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8DE718A1DECC6EF00373BCD /* Build configuration list for PBXNativeTarget "IosTravisFastlaneDemo" */;
 			buildPhases = (
+				88CE3D684439D425B79E6A76 /* [CP] Check Pods Manifest.lock */,
 				C8DE715E1DECC6EE00373BCD /* Sources */,
 				C8DE715F1DECC6EE00373BCD /* Frameworks */,
 				C8DE71601DECC6EE00373BCD /* Resources */,
+				C85323121DF5B5C7005676F1 /* ShellScript */,
+				36289ACB9A386FA68530E7FC /* [CP] Embed Pods Frameworks */,
+				2EEE4698BC2DA5FDB011F25C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +290,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EEE4698BC2DA5FDB011F25C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IosTravisFastlaneDemo/Pods-IosTravisFastlaneDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36289ACB9A386FA68530E7FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IosTravisFastlaneDemo/Pods-IosTravisFastlaneDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88CE3D684439D425B79E6A76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C85323121DF5B5C7005676F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ce6b7e3c4cd30caa1817a3bf92e399054820d87a 5a364aa3710f8bfe6cae14a479878d60107ca1e56fd2bf52a5e2202a4a34b506";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C8DE715E1DECC6EE00373BCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -377,10 +468,15 @@
 		};
 		C892F7431DF4987600CEDA6A /* Stage */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87860B7AACA4667375EA7B11 /* Pods-IosTravisFastlaneDemo.stage.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = J677PBPSB2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IosTravisFastlaneDemo",
+				);
 				INFOPLIST_FILE = IosTravisFastlaneDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.labun.IosTravisFastlaneDemo.stage;
@@ -513,10 +609,15 @@
 		};
 		C8DE718B1DECC6EF00373BCD /* Dev */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DC536C83077D4A71391E656 /* Pods-IosTravisFastlaneDemo.dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = J677PBPSB2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IosTravisFastlaneDemo",
+				);
 				INFOPLIST_FILE = IosTravisFastlaneDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.labun.IosTravisFastlaneDemo.dev;
@@ -529,10 +630,15 @@
 		};
 		C8DE718C1DECC6EF00373BCD /* Production */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0F91A30ECBA8B3AD991EF5 /* Pods-IosTravisFastlaneDemo.production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = J677PBPSB2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IosTravisFastlaneDemo",
+				);
 				INFOPLIST_FILE = IosTravisFastlaneDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.labun.IosTravisFastlaneDemo;

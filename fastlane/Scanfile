@@ -1,3 +1,4 @@
+workspace "IosTravisFastlaneDemo.xcworkspace"
 scheme "IosTravisFastlaneDemoDev"
 devices ['iPhone 7']
 clean true
