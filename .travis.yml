@@ -1,0 +1,14 @@
+language: objective-c
+osx_image: xcode8
+cache:
+    - bundler
+before_install:
+- echo -e "machine gitlab.com\n login $CI_USER_LOGIN \n password $CI_USER_PASS" >> ~/.netrc
+install:
+    - bundle install --path vendor/bundle
+script:
+    - if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bundle exec fastlane test; fi
+    - if [ "$TRAVIS_BRANCH" = "develop" ]; then bundle exec fastlane dev; fi
+    - if [[ "$TRAVIS_BRANCH" = "release"* ]]; then bundle exec fastlane stage; fi
+    - if [ "$TRAVIS_BRANCH" = "master" ]; then bundle exec fastlane prod; fi
+

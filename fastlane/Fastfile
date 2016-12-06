@@ -1,0 +1,36 @@
+default_platform  :ios
+
+desc "Test app"
+lane :test do |options|
+    cocoapods
+    scan
+end
+
+desc "Build and submit the app on Crashlytics Beta"
+lane :dev do |options|
+    cocoapods
+    match(type: "adhoc")
+    gym(scheme: "IosTravisFastlaneDemoDev")
+    crashlytics(api_token: ENV["CRASHLYTICS_API_TOKEN"], build_secret: ENV["CRASHLYTICS_BUILD_SECRET"])
+    rocket
+end
+
+desc "Build and submit the app on Testflight"
+lane :stage do |options|
+    cocoapods
+    match(type: "appstore")
+    gym(scheme: "IosTravisFastlaneDemoStage")
+    pilot
+    rocket
+end
+
+desc "Build and submit the app on AppStore"
+lane :prod do |options|
+    cocoapods
+    match(type: "appstore")
+    gym(scheme: "IosTravisFastlaneDemoProd")
+    snapshot
+    deliver
+    rocket
+end
+

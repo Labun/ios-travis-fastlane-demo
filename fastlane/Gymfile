@@ -1,0 +1,2 @@
+workspace "IosTravisFastlaneDemo.xcworkspace"
+use_legacy_build_api true

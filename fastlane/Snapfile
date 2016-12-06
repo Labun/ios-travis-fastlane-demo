@@ -1,0 +1,14 @@
+scheme "IosTravisFastlaneDemoStage"
+
+devices([
+  "iPhone 6",
+  "iPhone 6 Plus",
+  "iPhone 7"
+])
+
+languages([
+  "en-US",
+  "de-DE"
+])
+
+clear_previous_screenshots true
